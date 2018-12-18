@@ -1,0 +1,6 @@
+framework module Pods_TalkTalkUITests {
+  umbrella header "Pods-TalkTalkUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

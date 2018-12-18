@@ -1,0 +1,1500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C16BD7E614F721C7D418D6C /* Pods_TalkTalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C741F2DA015D29D11E3F8683 /* Pods_TalkTalkUITests.framework */; };
+		5B15BAFE9E3601A74E6CDA67 /* Pods_TalkTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE7C6D724CA2FC5FC466623 /* Pods_TalkTalk.framework */; };
+		843EFB872178181B00C0D95A /* ToDoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843EFB862178181B00C0D95A /* ToDoDetailViewController.swift */; };
+		8707A511212A3A4B0086EDB4 /* ChatGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707A510212A3A4B0086EDB4 /* ChatGroupViewController.swift */; };
+		8707A520212A3CB30086EDB4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707A51F212A3CB30086EDB4 /* ProfileViewController.swift */; };
+		8707A522212BC6500086EDB4 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707A521212BC6500086EDB4 /* JoinViewController.swift */; };
+		8707A52A21378CAC0086EDB4 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707A52921378CAC0086EDB4 /* ToDoTableViewController.swift */; };
+		8707A52D213791EE0086EDB4 /* TableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707A52C213791EE0086EDB4 /* TableSection.swift */; };
+		8728EBCA2160496200EB9A58 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728EBC92160496200EB9A58 /* user.swift */; };
+		8728EBD921604A3200EB9A58 /* room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728EBD821604A3200EB9A58 /* room.swift */; };
+		8728EBDB21604CE100EB9A58 /* DBTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8728EBDA21604CE100EB9A58 /* DBTestController.swift */; };
+		877CB9732120D2CA00AA7DA1 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877CB9702120D2C700AA7DA1 /* SocketIO.framework */; };
+		877CB9742120D2CD00AA7DA1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877CB9722120D2C700AA7DA1 /* Starscream.framework */; };
+		877CB9782120D99600AA7DA1 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CB9772120D99600AA7DA1 /* SocketIOManager.swift */; };
+		877CBC8F212270EF00AA7DA1 /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877CBC84212270EF00AA7DA1 /* FacebookCore.framework */; };
+		877CBC92212275D100AA7DA1 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CBC90212275D100AA7DA1 /* NetworkingManager.swift */; };
+		877CBC93212275D100AA7DA1 /* FacebookAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CBC91212275D100AA7DA1 /* FacebookAPIManager.swift */; };
+		877CBC99212275DA00AA7DA1 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877CBC94212275D900AA7DA1 /* LoginScreen.storyboard */; };
+		877CBC9A212275DA00AA7DA1 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CBC95212275D900AA7DA1 /* LoginTextField.swift */; };
+		877CBC9B212275DA00AA7DA1 /* TwitterLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CBC96212275DA00AA7DA1 /* TwitterLoginButton.swift */; };
+		877CBC9C212275DA00AA7DA1 /* FacebookLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CBC97212275DA00AA7DA1 /* FacebookLoginButton.swift */; };
+		877CBC9D212275DA00AA7DA1 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CBC98212275DA00AA7DA1 /* LoginButton.swift */; };
+		877CBCA1212275E400AA7DA1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CBCA0212275E400AA7DA1 /* LoginViewController.swift */; };
+		877CBCA22122768E00AA7DA1 /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877CBC86212270EF00AA7DA1 /* FacebookLogin.framework */; };
+		877CBCB22122773D00AA7DA1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877CBC8A212270EF00AA7DA1 /* FBSDKCoreKit.framework */; };
+		877CBCB32122774600AA7DA1 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877CBC8E212270EF00AA7DA1 /* FBSDKShareKit.framework */; };
+		877CBCB6212277DD00AA7DA1 /* FacebookUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CBCB4212277DC00AA7DA1 /* FacebookUser.swift */; };
+		877CBCB7212277DD00AA7DA1 /* FacebookPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CBCB5212277DD00AA7DA1 /* FacebookPost.swift */; };
+		877CBCB92128912A00AA7DA1 /* ChattingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877CBCB82128912A00AA7DA1 /* ChattingScreen.storyboard */; };
+		877CBCBB2128931D00AA7DA1 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CBCBA2128931D00AA7DA1 /* TabViewController.swift */; };
+		877CBCBD2128B03700AA7DA1 /* FindViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CBCBC2128B03700AA7DA1 /* FindViewCotroller.swift */; };
+		877CBCBF2128B04700AA7DA1 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CBCBE2128B04700AA7DA1 /* ChatViewController.swift */; };
+		877CBCC12128B05D00AA7DA1 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877CBCC02128B05D00AA7DA1 /* FriendViewController.swift */; };
+		877CBCC32128B09300AA7DA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877CBCC22128B09300AA7DA1 /* LaunchScreen.storyboard */; };
+		877D1B6421581DF5007FDBF6 /* DataManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877D1B6321581DF5007FDBF6 /* DataManage.swift */; };
+		87A6F066215DCDA7009C2436 /* MyBubbleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A6F058215DCDA5009C2436 /* MyBubbleViewCell.swift */; };
+		87A6F067215DCDA7009C2436 /* LynnBubbleViewHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A6F059215DCDA5009C2436 /* LynnBubbleViewHeaderCell.xib */; };
+		87A6F069215DCDA7009C2436 /* ImageBubbleSomeoneViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A6F05B215DCDA5009C2436 /* ImageBubbleSomeoneViewCell.swift */; };
+		87A6F06A215DCDA7009C2436 /* MyBubbleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A6F05C215DCDA5009C2436 /* MyBubbleViewCell.xib */; };
+		87A6F06B215DCDA7009C2436 /* ImageBubbleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A6F05D215DCDA5009C2436 /* ImageBubbleTableViewCell.swift */; };
+		87A6F06C215DCDA7009C2436 /* Someone'sBubbleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A6F05E215DCDA6009C2436 /* Someone'sBubbleViewCell.swift */; };
+		87A6F06D215DCDA7009C2436 /* LynnBubbleViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A6F05F215DCDA6009C2436 /* LynnBubbleViewHeaderCell.swift */; };
+		87A6F06F215DCDA7009C2436 /* ImageBubbleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A6F061215DCDA6009C2436 /* ImageBubbleTableViewCell.xib */; };
+		87A6F070215DCDA7009C2436 /* ImageBubbleSomeoneViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A6F062215DCDA6009C2436 /* ImageBubbleSomeoneViewCell.xib */; };
+		87A6F071215DCDA7009C2436 /* LynnBubbleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A6F063215DCDA6009C2436 /* LynnBubbleTableView.swift */; };
+		87A6F072215DCDA7009C2436 /* Someone'sBubbleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A6F064215DCDA6009C2436 /* Someone'sBubbleViewCell.xib */; };
+		87A6F073215DCDA7009C2436 /* LynnBubbleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A6F065215DCDA7009C2436 /* LynnBubbleData.swift */; };
+		87E085C22120B1CF000FE3B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E085C12120B1CF000FE3B2 /* AppDelegate.swift */; };
+		87E085C42120B1CF000FE3B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E085C32120B1CF000FE3B2 /* ViewController.swift */; };
+		87E085C72120B1CF000FE3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E085C52120B1CF000FE3B2 /* Main.storyboard */; };
+		87E085C92120B1CF000FE3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E085C82120B1CF000FE3B2 /* Assets.xcassets */; };
+		87E085D72120B1D0000FE3B2 /* TalkTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E085D62120B1D0000FE3B2 /* TalkTalkTests.swift */; };
+		87E085E22120B1D0000FE3B2 /* TalkTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E085E12120B1D0000FE3B2 /* TalkTalkUITests.swift */; };
+		B49E72B0F5B0BCE41A34070E /* Pods_TalkTalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87B6C51D7BDD9A67829F277 /* Pods_TalkTalkTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		877CB9692120D2C700AA7DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 45E1369BB6D7DF70BF6886A1AAD15C8B;
+			remoteInfo = "Pods-TalkTalk";
+		};
+		877CB96B2120D2C700AA7DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9BE5F9DB2807BE064F46E86E27C23870;
+			remoteInfo = "Pods-TalkTalkTests";
+		};
+		877CB96D2120D2C700AA7DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9EBE5F3C6CECEC03E5C038FC9010E15B;
+			remoteInfo = "Pods-TalkTalkUITests";
+		};
+		877CB96F2120D2C700AA7DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4CD90CFF39A67B9D60F2A853B879095;
+			remoteInfo = "Socket.IO-Client-Swift";
+		};
+		877CB9712120D2C700AA7DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F844EFF68C0704671B3360CBD52CA2D5;
+			remoteInfo = Starscream;
+		};
+		877CBC7F212270EF00AA7DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AF4BDBBFB91385E5C2521095CEA0E4CE;
+			remoteInfo = AFNetworking;
+		};
+		877CBC81212270EF00AA7DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E67A81F9E09ED3A6B921E8DADDCC4035;
+			remoteInfo = Bolts;
+		};
+		877CBC83212270EF00AA7DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F06FF34D63316E9FD6CD54D6ACA64481;
+			remoteInfo = FacebookCore;
+		};
+		877CBC85212270EF00AA7DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3622F41DEA2DDD9D68C8FBAF6FAF1EA1;
+			remoteInfo = FacebookLogin;
+		};
+		877CBC87212270EF00AA7DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E6ABF74E3FD945D6145DCA8A98C91D63;
+			remoteInfo = FacebookShare;
+		};
+		877CBC89212270EF00AA7DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2EC67B9D47D2E2C7090CDBBAB09F223;
+			remoteInfo = FBSDKCoreKit;
+		};
+		877CBC8B212270EF00AA7DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AAAFDD3376D89D73E49D2BD302894DE;
+			remoteInfo = FBSDKLoginKit;
+		};
+		877CBC8D212270EF00AA7DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C83F031F09EE3FC9D3986392DED45276;
+			remoteInfo = FBSDKShareKit;
+		};
+		87E085D32120B1D0000FE3B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87E085B62120B1CF000FE3B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87E085BD2120B1CF000FE3B2;
+			remoteInfo = TalkTalk;
+		};
+		87E085DE2120B1D0000FE3B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87E085B62120B1CF000FE3B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87E085BD2120B1CF000FE3B2;
+			remoteInfo = TalkTalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		843EFB862178181B00C0D95A /* ToDoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailViewController.swift; sourceTree = "<group>"; };
+		8707A510212A3A4B0086EDB4 /* ChatGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGroupViewController.swift; sourceTree = "<group>"; };
+		8707A51F212A3CB30086EDB4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8707A521212BC6500086EDB4 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		8707A52921378CAC0086EDB4 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		8707A52C213791EE0086EDB4 /* TableSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSection.swift; sourceTree = "<group>"; };
+		8728EBC92160496200EB9A58 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		8728EBD821604A3200EB9A58 /* room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = room.swift; sourceTree = "<group>"; };
+		8728EBDA21604CE100EB9A58 /* DBTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBTestController.swift; sourceTree = "<group>"; };
+		877CB9032120D2C700AA7DA1 /* Manifest.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
+		877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
+		877CB9082120D2C700AA7DA1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		877CB9092120D2C700AA7DA1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		877CB90D2120D2C700AA7DA1 /* SocketAckEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketAckEmitter.swift; sourceTree = "<group>"; };
+		877CB90E2120D2C700AA7DA1 /* SocketAckManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketAckManager.swift; sourceTree = "<group>"; };
+		877CB9102120D2C700AA7DA1 /* SocketAnyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketAnyEvent.swift; sourceTree = "<group>"; };
+		877CB9112120D2C700AA7DA1 /* SocketEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketEventHandler.swift; sourceTree = "<group>"; };
+		877CB9122120D2C700AA7DA1 /* SocketIOClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOClient.swift; sourceTree = "<group>"; };
+		877CB9132120D2C700AA7DA1 /* SocketIOClientConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOClientConfiguration.swift; sourceTree = "<group>"; };
+		877CB9142120D2C700AA7DA1 /* SocketIOClientOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOClientOption.swift; sourceTree = "<group>"; };
+		877CB9152120D2C700AA7DA1 /* SocketIOClientSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOClientSpec.swift; sourceTree = "<group>"; };
+		877CB9162120D2C700AA7DA1 /* SocketIOStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOStatus.swift; sourceTree = "<group>"; };
+		877CB9182120D2C700AA7DA1 /* SocketEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketEngine.swift; sourceTree = "<group>"; };
+		877CB9192120D2C700AA7DA1 /* SocketEngineClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketEngineClient.swift; sourceTree = "<group>"; };
+		877CB91A2120D2C700AA7DA1 /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketEnginePacketType.swift; sourceTree = "<group>"; };
+		877CB91B2120D2C700AA7DA1 /* SocketEnginePollable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketEnginePollable.swift; sourceTree = "<group>"; };
+		877CB91C2120D2C700AA7DA1 /* SocketEngineSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketEngineSpec.swift; sourceTree = "<group>"; };
+		877CB91D2120D2C700AA7DA1 /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketEngineWebsocket.swift; sourceTree = "<group>"; };
+		877CB91F2120D2C700AA7DA1 /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		877CB9202120D2C700AA7DA1 /* SocketManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManagerSpec.swift; sourceTree = "<group>"; };
+		877CB9222120D2C700AA7DA1 /* SocketPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketPacket.swift; sourceTree = "<group>"; };
+		877CB9232120D2C700AA7DA1 /* SocketParsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketParsable.swift; sourceTree = "<group>"; };
+		877CB9252120D2C700AA7DA1 /* SocketExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketExtensions.swift; sourceTree = "<group>"; };
+		877CB9262120D2C700AA7DA1 /* SocketLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketLogger.swift; sourceTree = "<group>"; };
+		877CB9272120D2C700AA7DA1 /* SocketStringReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketStringReader.swift; sourceTree = "<group>"; };
+		877CB9282120D2C700AA7DA1 /* SocketTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketTypes.swift; sourceTree = "<group>"; };
+		877CB9292120D2C700AA7DA1 /* SSLSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
+		877CB92B2120D2C700AA7DA1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		877CB92C2120D2C700AA7DA1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		877CB92E2120D2C700AA7DA1 /* Compression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compression.swift; sourceTree = "<group>"; };
+		877CB92F2120D2C700AA7DA1 /* SSLSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
+		877CB9302120D2C700AA7DA1 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		877CB9322120D2C700AA7DA1 /* include.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = include.h; sourceTree = "<group>"; };
+		877CB9332120D2C700AA7DA1 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		877CB9362120D2C700AA7DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		877CB9372120D2C700AA7DA1 /* Pods-TalkTalk-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-TalkTalk-acknowledgements.markdown"; sourceTree = "<group>"; };
+		877CB9382120D2C700AA7DA1 /* Pods-TalkTalk-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-TalkTalk-acknowledgements.plist"; sourceTree = "<group>"; };
+		877CB9392120D2C700AA7DA1 /* Pods-TalkTalk-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-TalkTalk-dummy.m"; sourceTree = "<group>"; };
+		877CB93A2120D2C700AA7DA1 /* Pods-TalkTalk-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-TalkTalk-frameworks.sh"; sourceTree = "<group>"; };
+		877CB93B2120D2C700AA7DA1 /* Pods-TalkTalk-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-TalkTalk-resources.sh"; sourceTree = "<group>"; };
+		877CB93C2120D2C700AA7DA1 /* Pods-TalkTalk-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-TalkTalk-umbrella.h"; sourceTree = "<group>"; };
+		877CB93D2120D2C700AA7DA1 /* Pods-TalkTalk.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-TalkTalk.debug.xcconfig"; sourceTree = "<group>"; };
+		877CB93E2120D2C700AA7DA1 /* Pods-TalkTalk.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TalkTalk.modulemap"; sourceTree = "<group>"; };
+		877CB93F2120D2C700AA7DA1 /* Pods-TalkTalk.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-TalkTalk.release.xcconfig"; sourceTree = "<group>"; };
+		877CB9412120D2C700AA7DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		877CB9422120D2C700AA7DA1 /* Pods-TalkTalkTests-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-TalkTalkTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		877CB9432120D2C700AA7DA1 /* Pods-TalkTalkTests-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-TalkTalkTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		877CB9442120D2C700AA7DA1 /* Pods-TalkTalkTests-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-TalkTalkTests-dummy.m"; sourceTree = "<group>"; };
+		877CB9452120D2C700AA7DA1 /* Pods-TalkTalkTests-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-TalkTalkTests-frameworks.sh"; sourceTree = "<group>"; };
+		877CB9462120D2C700AA7DA1 /* Pods-TalkTalkTests-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-TalkTalkTests-resources.sh"; sourceTree = "<group>"; };
+		877CB9472120D2C700AA7DA1 /* Pods-TalkTalkTests-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-TalkTalkTests-umbrella.h"; sourceTree = "<group>"; };
+		877CB9482120D2C700AA7DA1 /* Pods-TalkTalkTests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-TalkTalkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		877CB9492120D2C700AA7DA1 /* Pods-TalkTalkTests.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TalkTalkTests.modulemap"; sourceTree = "<group>"; };
+		877CB94A2120D2C700AA7DA1 /* Pods-TalkTalkTests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-TalkTalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		877CB94C2120D2C700AA7DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		877CB94D2120D2C700AA7DA1 /* Pods-TalkTalkUITests-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-TalkTalkUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		877CB94E2120D2C700AA7DA1 /* Pods-TalkTalkUITests-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-TalkTalkUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		877CB94F2120D2C700AA7DA1 /* Pods-TalkTalkUITests-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-TalkTalkUITests-dummy.m"; sourceTree = "<group>"; };
+		877CB9502120D2C700AA7DA1 /* Pods-TalkTalkUITests-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-TalkTalkUITests-frameworks.sh"; sourceTree = "<group>"; };
+		877CB9512120D2C700AA7DA1 /* Pods-TalkTalkUITests-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-TalkTalkUITests-resources.sh"; sourceTree = "<group>"; };
+		877CB9522120D2C700AA7DA1 /* Pods-TalkTalkUITests-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-TalkTalkUITests-umbrella.h"; sourceTree = "<group>"; };
+		877CB9532120D2C700AA7DA1 /* Pods-TalkTalkUITests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-TalkTalkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		877CB9542120D2C700AA7DA1 /* Pods-TalkTalkUITests.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TalkTalkUITests.modulemap"; sourceTree = "<group>"; };
+		877CB9552120D2C700AA7DA1 /* Pods-TalkTalkUITests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-TalkTalkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		877CB9572120D2C700AA7DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		877CB9582120D2C700AA7DA1 /* Socket.IO-Client-Swift-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Socket.IO-Client-Swift-dummy.m"; sourceTree = "<group>"; };
+		877CB9592120D2C700AA7DA1 /* Socket.IO-Client-Swift-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Socket.IO-Client-Swift-prefix.pch"; sourceTree = "<group>"; };
+		877CB95A2120D2C700AA7DA1 /* Socket.IO-Client-Swift-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Socket.IO-Client-Swift-umbrella.h"; sourceTree = "<group>"; };
+		877CB95B2120D2C700AA7DA1 /* Socket.IO-Client-Swift.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Socket.IO-Client-Swift.modulemap"; sourceTree = "<group>"; };
+		877CB95C2120D2C700AA7DA1 /* Socket.IO-Client-Swift.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Socket.IO-Client-Swift.xcconfig"; sourceTree = "<group>"; };
+		877CB95E2120D2C700AA7DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		877CB95F2120D2C700AA7DA1 /* Starscream-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		877CB9602120D2C700AA7DA1 /* Starscream-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		877CB9612120D2C700AA7DA1 /* Starscream-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		877CB9622120D2C700AA7DA1 /* Starscream.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = Starscream.modulemap; sourceTree = "<group>"; };
+		877CB9632120D2C700AA7DA1 /* Starscream.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
+		877CB9772120D99600AA7DA1 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		877CBC90212275D100AA7DA1 /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		877CBC91212275D100AA7DA1 /* FacebookAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAPIManager.swift; sourceTree = "<group>"; };
+		877CBC94212275D900AA7DA1 /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		877CBC95212275D900AA7DA1 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		877CBC96212275DA00AA7DA1 /* TwitterLoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterLoginButton.swift; sourceTree = "<group>"; };
+		877CBC97212275DA00AA7DA1 /* FacebookLoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginButton.swift; sourceTree = "<group>"; };
+		877CBC98212275DA00AA7DA1 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		877CBCA0212275E400AA7DA1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		877CBCB4212277DC00AA7DA1 /* FacebookUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookUser.swift; sourceTree = "<group>"; };
+		877CBCB5212277DD00AA7DA1 /* FacebookPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookPost.swift; sourceTree = "<group>"; };
+		877CBCB82128912A00AA7DA1 /* ChattingScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChattingScreen.storyboard; sourceTree = "<group>"; };
+		877CBCBA2128931D00AA7DA1 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		877CBCBC2128B03700AA7DA1 /* FindViewCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewCotroller.swift; sourceTree = "<group>"; };
+		877CBCBE2128B04700AA7DA1 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		877CBCC02128B05D00AA7DA1 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		877CBCC22128B09300AA7DA1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		877D1B6321581DF5007FDBF6 /* DataManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManage.swift; sourceTree = "<group>"; };
+		87A6F058215DCDA5009C2436 /* MyBubbleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBubbleViewCell.swift; sourceTree = "<group>"; };
+		87A6F059215DCDA5009C2436 /* LynnBubbleViewHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LynnBubbleViewHeaderCell.xib; sourceTree = "<group>"; };
+		87A6F05B215DCDA5009C2436 /* ImageBubbleSomeoneViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBubbleSomeoneViewCell.swift; sourceTree = "<group>"; };
+		87A6F05C215DCDA5009C2436 /* MyBubbleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyBubbleViewCell.xib; sourceTree = "<group>"; };
+		87A6F05D215DCDA5009C2436 /* ImageBubbleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBubbleTableViewCell.swift; sourceTree = "<group>"; };
+		87A6F05E215DCDA6009C2436 /* Someone'sBubbleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Someone'sBubbleViewCell.swift"; sourceTree = "<group>"; };
+		87A6F05F215DCDA6009C2436 /* LynnBubbleViewHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LynnBubbleViewHeaderCell.swift; sourceTree = "<group>"; };
+		87A6F061215DCDA6009C2436 /* ImageBubbleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageBubbleTableViewCell.xib; sourceTree = "<group>"; };
+		87A6F062215DCDA6009C2436 /* ImageBubbleSomeoneViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageBubbleSomeoneViewCell.xib; sourceTree = "<group>"; };
+		87A6F063215DCDA6009C2436 /* LynnBubbleTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LynnBubbleTableView.swift; sourceTree = "<group>"; };
+		87A6F064215DCDA6009C2436 /* Someone'sBubbleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Someone'sBubbleViewCell.xib"; sourceTree = "<group>"; };
+		87A6F065215DCDA7009C2436 /* LynnBubbleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LynnBubbleData.swift; sourceTree = "<group>"; };
+		87E085BE2120B1CF000FE3B2 /* TalkTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E085C12120B1CF000FE3B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87E085C32120B1CF000FE3B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87E085C62120B1CF000FE3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87E085C82120B1CF000FE3B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87E085CD2120B1CF000FE3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E085D22120B1D0000FE3B2 /* TalkTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E085D62120B1D0000FE3B2 /* TalkTalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkTalkTests.swift; sourceTree = "<group>"; };
+		87E085D82120B1D0000FE3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E085DD2120B1D0000FE3B2 /* TalkTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E085E12120B1D0000FE3B2 /* TalkTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkTalkUITests.swift; sourceTree = "<group>"; };
+		87E085E32120B1D0000FE3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1FD6DB8A5D186F3606A37BF /* Pods-TalkTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTalk/Pods-TalkTalk.release.xcconfig"; sourceTree = "<group>"; };
+		B820BDA53DD5630A31E7C5E7 /* Pods-TalkTalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTalkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTalkUITests/Pods-TalkTalkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BFE7C6D724CA2FC5FC466623 /* Pods_TalkTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C741F2DA015D29D11E3F8683 /* Pods_TalkTalkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkTalkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C885915F2A17D58E042BD0E3 /* Pods-TalkTalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTalkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTalkTests/Pods-TalkTalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		D08B841602B66AA61BAA5BC0 /* Pods-TalkTalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTalkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTalkTests/Pods-TalkTalkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8983A00D0F27E21DBDE32CB /* Pods-TalkTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTalk/Pods-TalkTalk.debug.xcconfig"; sourceTree = "<group>"; };
+		F87B6C51D7BDD9A67829F277 /* Pods_TalkTalkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkTalkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7FB1335B37DAD54924E06E /* Pods-TalkTalkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTalkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTalkUITests/Pods-TalkTalkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87E085BB2120B1CF000FE3B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877CBCB32122774600AA7DA1 /* FBSDKShareKit.framework in Frameworks */,
+				877CBCB22122773D00AA7DA1 /* FBSDKCoreKit.framework in Frameworks */,
+				877CBCA22122768E00AA7DA1 /* FacebookLogin.framework in Frameworks */,
+				877CBC8F212270EF00AA7DA1 /* FacebookCore.framework in Frameworks */,
+				877CB9742120D2CD00AA7DA1 /* Starscream.framework in Frameworks */,
+				877CB9732120D2CA00AA7DA1 /* SocketIO.framework in Frameworks */,
+				5B15BAFE9E3601A74E6CDA67 /* Pods_TalkTalk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E085CF2120B1D0000FE3B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49E72B0F5B0BCE41A34070E /* Pods_TalkTalkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E085DA2120B1D0000FE3B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C16BD7E614F721C7D418D6C /* Pods_TalkTalkUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27224A6221BFD0FA9959E9A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8983A00D0F27E21DBDE32CB /* Pods-TalkTalk.debug.xcconfig */,
+				B1FD6DB8A5D186F3606A37BF /* Pods-TalkTalk.release.xcconfig */,
+				D08B841602B66AA61BAA5BC0 /* Pods-TalkTalkTests.debug.xcconfig */,
+				C885915F2A17D58E042BD0E3 /* Pods-TalkTalkTests.release.xcconfig */,
+				FB7FB1335B37DAD54924E06E /* Pods-TalkTalkUITests.debug.xcconfig */,
+				B820BDA53DD5630A31E7C5E7 /* Pods-TalkTalkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8707A52B213791EE0086EDB4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8707A52C213791EE0086EDB4 /* TableSection.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		877CB9002120D2C700AA7DA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				877CB9012120D2C700AA7DA1 /* Headers */,
+				877CB9022120D2C700AA7DA1 /* Local Podspecs */,
+				877CB9032120D2C700AA7DA1 /* Manifest.lock */,
+				877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */,
+				877CB9072120D2C700AA7DA1 /* Socket.IO-Client-Swift */,
+				877CB92A2120D2C700AA7DA1 /* Starscream */,
+				877CB9342120D2C700AA7DA1 /* Target Support Files */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		877CB9012120D2C700AA7DA1 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		877CB9022120D2C700AA7DA1 /* Local Podspecs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Local Podspecs";
+			sourceTree = "<group>";
+		};
+		877CB9052120D2C700AA7DA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				877CBC80212270EF00AA7DA1 /* AFNetworking.framework */,
+				877CBC82212270EF00AA7DA1 /* Bolts.framework */,
+				877CBC84212270EF00AA7DA1 /* FacebookCore.framework */,
+				877CBC86212270EF00AA7DA1 /* FacebookLogin.framework */,
+				877CBC88212270EF00AA7DA1 /* FacebookShare.framework */,
+				877CBC8A212270EF00AA7DA1 /* FBSDKCoreKit.framework */,
+				877CBC8C212270EF00AA7DA1 /* FBSDKLoginKit.framework */,
+				877CBC8E212270EF00AA7DA1 /* FBSDKShareKit.framework */,
+				877CB96A2120D2C700AA7DA1 /* Pods_TalkTalk.framework */,
+				877CB96C2120D2C700AA7DA1 /* Pods_TalkTalkTests.framework */,
+				877CB96E2120D2C700AA7DA1 /* Pods_TalkTalkUITests.framework */,
+				877CB9702120D2C700AA7DA1 /* SocketIO.framework */,
+				877CB9722120D2C700AA7DA1 /* Starscream.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		877CB9072120D2C700AA7DA1 /* Socket.IO-Client-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				877CB9082120D2C700AA7DA1 /* LICENSE */,
+				877CB9092120D2C700AA7DA1 /* README.md */,
+				877CB90A2120D2C700AA7DA1 /* Source */,
+			);
+			path = "Socket.IO-Client-Swift";
+			sourceTree = "<group>";
+		};
+		877CB90A2120D2C700AA7DA1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				877CB90B2120D2C700AA7DA1 /* SocketIO */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		877CB90B2120D2C700AA7DA1 /* SocketIO */ = {
+			isa = PBXGroup;
+			children = (
+				877CB90C2120D2C700AA7DA1 /* Ack */,
+				877CB90F2120D2C700AA7DA1 /* Client */,
+				877CB9172120D2C700AA7DA1 /* Engine */,
+				877CB91E2120D2C700AA7DA1 /* Manager */,
+				877CB9212120D2C700AA7DA1 /* Parse */,
+				877CB9242120D2C700AA7DA1 /* Util */,
+			);
+			path = SocketIO;
+			sourceTree = "<group>";
+		};
+		877CB90C2120D2C700AA7DA1 /* Ack */ = {
+			isa = PBXGroup;
+			children = (
+				877CB90D2120D2C700AA7DA1 /* SocketAckEmitter.swift */,
+				877CB90E2120D2C700AA7DA1 /* SocketAckManager.swift */,
+			);
+			path = Ack;
+			sourceTree = "<group>";
+		};
+		877CB90F2120D2C700AA7DA1 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				877CB9102120D2C700AA7DA1 /* SocketAnyEvent.swift */,
+				877CB9112120D2C700AA7DA1 /* SocketEventHandler.swift */,
+				877CB9122120D2C700AA7DA1 /* SocketIOClient.swift */,
+				877CB9132120D2C700AA7DA1 /* SocketIOClientConfiguration.swift */,
+				877CB9142120D2C700AA7DA1 /* SocketIOClientOption.swift */,
+				877CB9152120D2C700AA7DA1 /* SocketIOClientSpec.swift */,
+				877CB9162120D2C700AA7DA1 /* SocketIOStatus.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		877CB9172120D2C700AA7DA1 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				877CB9182120D2C700AA7DA1 /* SocketEngine.swift */,
+				877CB9192120D2C700AA7DA1 /* SocketEngineClient.swift */,
+				877CB91A2120D2C700AA7DA1 /* SocketEnginePacketType.swift */,
+				877CB91B2120D2C700AA7DA1 /* SocketEnginePollable.swift */,
+				877CB91C2120D2C700AA7DA1 /* SocketEngineSpec.swift */,
+				877CB91D2120D2C700AA7DA1 /* SocketEngineWebsocket.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		877CB91E2120D2C700AA7DA1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				877CB91F2120D2C700AA7DA1 /* SocketManager.swift */,
+				877CB9202120D2C700AA7DA1 /* SocketManagerSpec.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		877CB9212120D2C700AA7DA1 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				877CB9222120D2C700AA7DA1 /* SocketPacket.swift */,
+				877CB9232120D2C700AA7DA1 /* SocketParsable.swift */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		877CB9242120D2C700AA7DA1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				877CB9252120D2C700AA7DA1 /* SocketExtensions.swift */,
+				877CB9262120D2C700AA7DA1 /* SocketLogger.swift */,
+				877CB9272120D2C700AA7DA1 /* SocketStringReader.swift */,
+				877CB9282120D2C700AA7DA1 /* SocketTypes.swift */,
+				877CB9292120D2C700AA7DA1 /* SSLSecurity.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		877CB92A2120D2C700AA7DA1 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				877CB92B2120D2C700AA7DA1 /* LICENSE */,
+				877CB92C2120D2C700AA7DA1 /* README.md */,
+				877CB92D2120D2C700AA7DA1 /* Sources */,
+				877CB9312120D2C700AA7DA1 /* zlib */,
+			);
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		877CB92D2120D2C700AA7DA1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				877CB92E2120D2C700AA7DA1 /* Compression.swift */,
+				877CB92F2120D2C700AA7DA1 /* SSLSecurity.swift */,
+				877CB9302120D2C700AA7DA1 /* WebSocket.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		877CB9312120D2C700AA7DA1 /* zlib */ = {
+			isa = PBXGroup;
+			children = (
+				877CB9322120D2C700AA7DA1 /* include.h */,
+				877CB9332120D2C700AA7DA1 /* module.modulemap */,
+			);
+			path = zlib;
+			sourceTree = "<group>";
+		};
+		877CB9342120D2C700AA7DA1 /* Target Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				877CB9352120D2C700AA7DA1 /* Pods-TalkTalk */,
+				877CB9402120D2C700AA7DA1 /* Pods-TalkTalkTests */,
+				877CB94B2120D2C700AA7DA1 /* Pods-TalkTalkUITests */,
+				877CB9562120D2C700AA7DA1 /* Socket.IO-Client-Swift */,
+				877CB95D2120D2C700AA7DA1 /* Starscream */,
+			);
+			path = "Target Support Files";
+			sourceTree = "<group>";
+		};
+		877CB9352120D2C700AA7DA1 /* Pods-TalkTalk */ = {
+			isa = PBXGroup;
+			children = (
+				877CB9362120D2C700AA7DA1 /* Info.plist */,
+				877CB9372120D2C700AA7DA1 /* Pods-TalkTalk-acknowledgements.markdown */,
+				877CB9382120D2C700AA7DA1 /* Pods-TalkTalk-acknowledgements.plist */,
+				877CB9392120D2C700AA7DA1 /* Pods-TalkTalk-dummy.m */,
+				877CB93A2120D2C700AA7DA1 /* Pods-TalkTalk-frameworks.sh */,
+				877CB93B2120D2C700AA7DA1 /* Pods-TalkTalk-resources.sh */,
+				877CB93C2120D2C700AA7DA1 /* Pods-TalkTalk-umbrella.h */,
+				877CB93D2120D2C700AA7DA1 /* Pods-TalkTalk.debug.xcconfig */,
+				877CB93E2120D2C700AA7DA1 /* Pods-TalkTalk.modulemap */,
+				877CB93F2120D2C700AA7DA1 /* Pods-TalkTalk.release.xcconfig */,
+			);
+			path = "Pods-TalkTalk";
+			sourceTree = "<group>";
+		};
+		877CB9402120D2C700AA7DA1 /* Pods-TalkTalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				877CB9412120D2C700AA7DA1 /* Info.plist */,
+				877CB9422120D2C700AA7DA1 /* Pods-TalkTalkTests-acknowledgements.markdown */,
+				877CB9432120D2C700AA7DA1 /* Pods-TalkTalkTests-acknowledgements.plist */,
+				877CB9442120D2C700AA7DA1 /* Pods-TalkTalkTests-dummy.m */,
+				877CB9452120D2C700AA7DA1 /* Pods-TalkTalkTests-frameworks.sh */,
+				877CB9462120D2C700AA7DA1 /* Pods-TalkTalkTests-resources.sh */,
+				877CB9472120D2C700AA7DA1 /* Pods-TalkTalkTests-umbrella.h */,
+				877CB9482120D2C700AA7DA1 /* Pods-TalkTalkTests.debug.xcconfig */,
+				877CB9492120D2C700AA7DA1 /* Pods-TalkTalkTests.modulemap */,
+				877CB94A2120D2C700AA7DA1 /* Pods-TalkTalkTests.release.xcconfig */,
+			);
+			path = "Pods-TalkTalkTests";
+			sourceTree = "<group>";
+		};
+		877CB94B2120D2C700AA7DA1 /* Pods-TalkTalkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				877CB94C2120D2C700AA7DA1 /* Info.plist */,
+				877CB94D2120D2C700AA7DA1 /* Pods-TalkTalkUITests-acknowledgements.markdown */,
+				877CB94E2120D2C700AA7DA1 /* Pods-TalkTalkUITests-acknowledgements.plist */,
+				877CB94F2120D2C700AA7DA1 /* Pods-TalkTalkUITests-dummy.m */,
+				877CB9502120D2C700AA7DA1 /* Pods-TalkTalkUITests-frameworks.sh */,
+				877CB9512120D2C700AA7DA1 /* Pods-TalkTalkUITests-resources.sh */,
+				877CB9522120D2C700AA7DA1 /* Pods-TalkTalkUITests-umbrella.h */,
+				877CB9532120D2C700AA7DA1 /* Pods-TalkTalkUITests.debug.xcconfig */,
+				877CB9542120D2C700AA7DA1 /* Pods-TalkTalkUITests.modulemap */,
+				877CB9552120D2C700AA7DA1 /* Pods-TalkTalkUITests.release.xcconfig */,
+			);
+			path = "Pods-TalkTalkUITests";
+			sourceTree = "<group>";
+		};
+		877CB9562120D2C700AA7DA1 /* Socket.IO-Client-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				877CB9572120D2C700AA7DA1 /* Info.plist */,
+				877CB9582120D2C700AA7DA1 /* Socket.IO-Client-Swift-dummy.m */,
+				877CB9592120D2C700AA7DA1 /* Socket.IO-Client-Swift-prefix.pch */,
+				877CB95A2120D2C700AA7DA1 /* Socket.IO-Client-Swift-umbrella.h */,
+				877CB95B2120D2C700AA7DA1 /* Socket.IO-Client-Swift.modulemap */,
+				877CB95C2120D2C700AA7DA1 /* Socket.IO-Client-Swift.xcconfig */,
+			);
+			path = "Socket.IO-Client-Swift";
+			sourceTree = "<group>";
+		};
+		877CB95D2120D2C700AA7DA1 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				877CB95E2120D2C700AA7DA1 /* Info.plist */,
+				877CB95F2120D2C700AA7DA1 /* Starscream-dummy.m */,
+				877CB9602120D2C700AA7DA1 /* Starscream-prefix.pch */,
+				877CB9612120D2C700AA7DA1 /* Starscream-umbrella.h */,
+				877CB9622120D2C700AA7DA1 /* Starscream.modulemap */,
+				877CB9632120D2C700AA7DA1 /* Starscream.xcconfig */,
+			);
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		877CBC6D2122707B00AA7DA1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8728EBDA21604CE100EB9A58 /* DBTestController.swift */,
+				877CBC91212275D100AA7DA1 /* FacebookAPIManager.swift */,
+				877CBC90212275D100AA7DA1 /* NetworkingManager.swift */,
+				877CB9772120D99600AA7DA1 /* SocketIOManager.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		877CBC6E2122707B00AA7DA1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				877CBCB5212277DD00AA7DA1 /* FacebookPost.swift */,
+				877CBCB4212277DC00AA7DA1 /* FacebookUser.swift */,
+				8728EBC92160496200EB9A58 /* user.swift */,
+				8728EBD821604A3200EB9A58 /* room.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		877CBC6F2122707B00AA7DA1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				877CBCBA2128931D00AA7DA1 /* TabViewController.swift */,
+				877CBCA0212275E400AA7DA1 /* LoginViewController.swift */,
+				877CBCBC2128B03700AA7DA1 /* FindViewCotroller.swift */,
+				877CBCBE2128B04700AA7DA1 /* ChatViewController.swift */,
+				877CBCC02128B05D00AA7DA1 /* FriendViewController.swift */,
+				8707A510212A3A4B0086EDB4 /* ChatGroupViewController.swift */,
+				8707A51F212A3CB30086EDB4 /* ProfileViewController.swift */,
+				8707A521212BC6500086EDB4 /* JoinViewController.swift */,
+				8707A52921378CAC0086EDB4 /* ToDoTableViewController.swift */,
+				843EFB862178181B00C0D95A /* ToDoDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		877CBC702122707B00AA7DA1 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				877CBC97212275DA00AA7DA1 /* FacebookLoginButton.swift */,
+				877CBC98212275DA00AA7DA1 /* LoginButton.swift */,
+				877CBC94212275D900AA7DA1 /* LoginScreen.storyboard */,
+				877CBC95212275D900AA7DA1 /* LoginTextField.swift */,
+				877CBC96212275DA00AA7DA1 /* TwitterLoginButton.swift */,
+				877CBCB82128912A00AA7DA1 /* ChattingScreen.storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		877D1B5321581D40007FDBF6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				877D1B6321581DF5007FDBF6 /* DataManage.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		87A6F02F215DC6C0009C2436 /* LynnBubbleTableView */ = {
+			isa = PBXGroup;
+			children = (
+				87A6F05B215DCDA5009C2436 /* ImageBubbleSomeoneViewCell.swift */,
+				87A6F062215DCDA6009C2436 /* ImageBubbleSomeoneViewCell.xib */,
+				87A6F05D215DCDA5009C2436 /* ImageBubbleTableViewCell.swift */,
+				87A6F061215DCDA6009C2436 /* ImageBubbleTableViewCell.xib */,
+				87A6F065215DCDA7009C2436 /* LynnBubbleData.swift */,
+				87A6F063215DCDA6009C2436 /* LynnBubbleTableView.swift */,
+				87A6F05F215DCDA6009C2436 /* LynnBubbleViewHeaderCell.swift */,
+				87A6F059215DCDA5009C2436 /* LynnBubbleViewHeaderCell.xib */,
+				87A6F058215DCDA5009C2436 /* MyBubbleViewCell.swift */,
+				87A6F05C215DCDA5009C2436 /* MyBubbleViewCell.xib */,
+				87A6F05E215DCDA6009C2436 /* Someone'sBubbleViewCell.swift */,
+				87A6F064215DCDA6009C2436 /* Someone'sBubbleViewCell.xib */,
+			);
+			path = LynnBubbleTableView;
+			sourceTree = "<group>";
+		};
+		87E085B52120B1CF000FE3B2 = {
+			isa = PBXGroup;
+			children = (
+				87E085C02120B1CF000FE3B2 /* TalkTalk */,
+				87E085D52120B1D0000FE3B2 /* TalkTalkTests */,
+				87E085E02120B1D0000FE3B2 /* TalkTalkUITests */,
+				87E085BF2120B1CF000FE3B2 /* Products */,
+				27224A6221BFD0FA9959E9A5 /* Pods */,
+				C1CD59FCF3B310ED8ADE7775 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87E085BF2120B1CF000FE3B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87E085BE2120B1CF000FE3B2 /* TalkTalk.app */,
+				87E085D22120B1D0000FE3B2 /* TalkTalkTests.xctest */,
+				87E085DD2120B1D0000FE3B2 /* TalkTalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87E085C02120B1CF000FE3B2 /* TalkTalk */ = {
+			isa = PBXGroup;
+			children = (
+				87A6F02F215DC6C0009C2436 /* LynnBubbleTableView */,
+				877D1B5321581D40007FDBF6 /* Data */,
+				8707A52B213791EE0086EDB4 /* Helper */,
+				877CBC6D2122707B00AA7DA1 /* Controllers */,
+				877CBC702122707B00AA7DA1 /* Interface */,
+				877CBC6E2122707B00AA7DA1 /* Models */,
+				877CBC6F2122707B00AA7DA1 /* ViewControllers */,
+				87E085C32120B1CF000FE3B2 /* ViewController.swift */,
+				87E085C12120B1CF000FE3B2 /* AppDelegate.swift */,
+				87E085C52120B1CF000FE3B2 /* Main.storyboard */,
+				87E085C82120B1CF000FE3B2 /* Assets.xcassets */,
+				877CBCC22128B09300AA7DA1 /* LaunchScreen.storyboard */,
+				87E085CD2120B1CF000FE3B2 /* Info.plist */,
+			);
+			path = TalkTalk;
+			sourceTree = "<group>";
+		};
+		87E085D52120B1D0000FE3B2 /* TalkTalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				87E085D62120B1D0000FE3B2 /* TalkTalkTests.swift */,
+				87E085D82120B1D0000FE3B2 /* Info.plist */,
+			);
+			path = TalkTalkTests;
+			sourceTree = "<group>";
+		};
+		87E085E02120B1D0000FE3B2 /* TalkTalkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				87E085E12120B1D0000FE3B2 /* TalkTalkUITests.swift */,
+				87E085E32120B1D0000FE3B2 /* Info.plist */,
+			);
+			path = TalkTalkUITests;
+			sourceTree = "<group>";
+		};
+		C1CD59FCF3B310ED8ADE7775 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				877CB9002120D2C700AA7DA1 /* Pods */,
+				BFE7C6D724CA2FC5FC466623 /* Pods_TalkTalk.framework */,
+				F87B6C51D7BDD9A67829F277 /* Pods_TalkTalkTests.framework */,
+				C741F2DA015D29D11E3F8683 /* Pods_TalkTalkUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87E085BD2120B1CF000FE3B2 /* TalkTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87E085E62120B1D0000FE3B2 /* Build configuration list for PBXNativeTarget "TalkTalk" */;
+			buildPhases = (
+				A8C50A396C1B001E0DC821E3 /* [CP] Check Pods Manifest.lock */,
+				87E085BA2120B1CF000FE3B2 /* Sources */,
+				87E085BB2120B1CF000FE3B2 /* Frameworks */,
+				87E085BC2120B1CF000FE3B2 /* Resources */,
+				82B31F1B853D8410D35788F4 /* [CP] Embed Pods Frameworks */,
+				FEDA514BB36F90D76F0F57D1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalkTalk;
+			productName = TalkTalk;
+			productReference = 87E085BE2120B1CF000FE3B2 /* TalkTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87E085D12120B1D0000FE3B2 /* TalkTalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87E085E92120B1D0000FE3B2 /* Build configuration list for PBXNativeTarget "TalkTalkTests" */;
+			buildPhases = (
+				461A2B7C2770047CCB2E6ED6 /* [CP] Check Pods Manifest.lock */,
+				87E085CE2120B1D0000FE3B2 /* Sources */,
+				87E085CF2120B1D0000FE3B2 /* Frameworks */,
+				87E085D02120B1D0000FE3B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87E085D42120B1D0000FE3B2 /* PBXTargetDependency */,
+			);
+			name = TalkTalkTests;
+			productName = TalkTalkTests;
+			productReference = 87E085D22120B1D0000FE3B2 /* TalkTalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		87E085DC2120B1D0000FE3B2 /* TalkTalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87E085EC2120B1D0000FE3B2 /* Build configuration list for PBXNativeTarget "TalkTalkUITests" */;
+			buildPhases = (
+				CF80B5ED6EDDB369F04B919D /* [CP] Check Pods Manifest.lock */,
+				87E085D92120B1D0000FE3B2 /* Sources */,
+				87E085DA2120B1D0000FE3B2 /* Frameworks */,
+				87E085DB2120B1D0000FE3B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87E085DF2120B1D0000FE3B2 /* PBXTargetDependency */,
+			);
+			name = TalkTalkUITests;
+			productName = TalkTalkUITests;
+			productReference = 87E085DD2120B1D0000FE3B2 /* TalkTalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87E085B62120B1CF000FE3B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Kibaek Kim";
+				TargetAttributes = {
+					87E085BD2120B1CF000FE3B2 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					87E085D12120B1D0000FE3B2 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 87E085BD2120B1CF000FE3B2;
+					};
+					87E085DC2120B1D0000FE3B2 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 87E085BD2120B1CF000FE3B2;
+					};
+				};
+			};
+			buildConfigurationList = 87E085B92120B1CF000FE3B2 /* Build configuration list for PBXProject "TalkTalk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87E085B52120B1CF000FE3B2;
+			productRefGroup = 87E085BF2120B1CF000FE3B2 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 877CB9052120D2C700AA7DA1 /* Products */;
+					ProjectRef = 877CB9042120D2C700AA7DA1 /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				87E085BD2120B1CF000FE3B2 /* TalkTalk */,
+				87E085D12120B1D0000FE3B2 /* TalkTalkTests */,
+				87E085DC2120B1D0000FE3B2 /* TalkTalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		877CB96A2120D2C700AA7DA1 /* Pods_TalkTalk.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_TalkTalk.framework;
+			remoteRef = 877CB9692120D2C700AA7DA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		877CB96C2120D2C700AA7DA1 /* Pods_TalkTalkTests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_TalkTalkTests.framework;
+			remoteRef = 877CB96B2120D2C700AA7DA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		877CB96E2120D2C700AA7DA1 /* Pods_TalkTalkUITests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_TalkTalkUITests.framework;
+			remoteRef = 877CB96D2120D2C700AA7DA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		877CB9702120D2C700AA7DA1 /* SocketIO.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketIO.framework;
+			remoteRef = 877CB96F2120D2C700AA7DA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		877CB9722120D2C700AA7DA1 /* Starscream.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Starscream.framework;
+			remoteRef = 877CB9712120D2C700AA7DA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		877CBC80212270EF00AA7DA1 /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 877CBC7F212270EF00AA7DA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		877CBC82212270EF00AA7DA1 /* Bolts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Bolts.framework;
+			remoteRef = 877CBC81212270EF00AA7DA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		877CBC84212270EF00AA7DA1 /* FacebookCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FacebookCore.framework;
+			remoteRef = 877CBC83212270EF00AA7DA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		877CBC86212270EF00AA7DA1 /* FacebookLogin.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FacebookLogin.framework;
+			remoteRef = 877CBC85212270EF00AA7DA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		877CBC88212270EF00AA7DA1 /* FacebookShare.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FacebookShare.framework;
+			remoteRef = 877CBC87212270EF00AA7DA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		877CBC8A212270EF00AA7DA1 /* FBSDKCoreKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FBSDKCoreKit.framework;
+			remoteRef = 877CBC89212270EF00AA7DA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		877CBC8C212270EF00AA7DA1 /* FBSDKLoginKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FBSDKLoginKit.framework;
+			remoteRef = 877CBC8B212270EF00AA7DA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		877CBC8E212270EF00AA7DA1 /* FBSDKShareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FBSDKShareKit.framework;
+			remoteRef = 877CBC8D212270EF00AA7DA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87E085BC2120B1CF000FE3B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E085C92120B1CF000FE3B2 /* Assets.xcassets in Resources */,
+				87A6F06F215DCDA7009C2436 /* ImageBubbleTableViewCell.xib in Resources */,
+				877CBCB92128912A00AA7DA1 /* ChattingScreen.storyboard in Resources */,
+				87A6F06A215DCDA7009C2436 /* MyBubbleViewCell.xib in Resources */,
+				87A6F070215DCDA7009C2436 /* ImageBubbleSomeoneViewCell.xib in Resources */,
+				877CBC99212275DA00AA7DA1 /* LoginScreen.storyboard in Resources */,
+				87A6F072215DCDA7009C2436 /* Someone'sBubbleViewCell.xib in Resources */,
+				877CBCC32128B09300AA7DA1 /* LaunchScreen.storyboard in Resources */,
+				87E085C72120B1CF000FE3B2 /* Main.storyboard in Resources */,
+				87A6F067215DCDA7009C2436 /* LynnBubbleViewHeaderCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E085D02120B1D0000FE3B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E085DB2120B1D0000FE3B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		461A2B7C2770047CCB2E6ED6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkTalkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82B31F1B853D8410D35788F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TalkTalk/Pods-TalkTalk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TalkTalk/Pods-TalkTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8C50A396C1B001E0DC821E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkTalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF80B5ED6EDDB369F04B919D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkTalkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEDA514BB36F90D76F0F57D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TalkTalk/Pods-TalkTalk-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TalkTalk/Pods-TalkTalk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87E085BA2120B1CF000FE3B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877CBCA1212275E400AA7DA1 /* LoginViewController.swift in Sources */,
+				877CBCB7212277DD00AA7DA1 /* FacebookPost.swift in Sources */,
+				877CBCBD2128B03700AA7DA1 /* FindViewCotroller.swift in Sources */,
+				8728EBD921604A3200EB9A58 /* room.swift in Sources */,
+				877CBC93212275D100AA7DA1 /* FacebookAPIManager.swift in Sources */,
+				877CBCB6212277DD00AA7DA1 /* FacebookUser.swift in Sources */,
+				877CBCBB2128931D00AA7DA1 /* TabViewController.swift in Sources */,
+				87A6F073215DCDA7009C2436 /* LynnBubbleData.swift in Sources */,
+				877D1B6421581DF5007FDBF6 /* DataManage.swift in Sources */,
+				8707A520212A3CB30086EDB4 /* ProfileViewController.swift in Sources */,
+				877CBC9D212275DA00AA7DA1 /* LoginButton.swift in Sources */,
+				877CB9782120D99600AA7DA1 /* SocketIOManager.swift in Sources */,
+				8707A52A21378CAC0086EDB4 /* ToDoTableViewController.swift in Sources */,
+				877CBC92212275D100AA7DA1 /* NetworkingManager.swift in Sources */,
+				877CBC9C212275DA00AA7DA1 /* FacebookLoginButton.swift in Sources */,
+				87A6F066215DCDA7009C2436 /* MyBubbleViewCell.swift in Sources */,
+				843EFB872178181B00C0D95A /* ToDoDetailViewController.swift in Sources */,
+				87A6F06B215DCDA7009C2436 /* ImageBubbleTableViewCell.swift in Sources */,
+				877CBC9A212275DA00AA7DA1 /* LoginTextField.swift in Sources */,
+				87E085C42120B1CF000FE3B2 /* ViewController.swift in Sources */,
+				8728EBCA2160496200EB9A58 /* user.swift in Sources */,
+				87A6F069215DCDA7009C2436 /* ImageBubbleSomeoneViewCell.swift in Sources */,
+				87A6F071215DCDA7009C2436 /* LynnBubbleTableView.swift in Sources */,
+				8707A52D213791EE0086EDB4 /* TableSection.swift in Sources */,
+				877CBCC12128B05D00AA7DA1 /* FriendViewController.swift in Sources */,
+				877CBC9B212275DA00AA7DA1 /* TwitterLoginButton.swift in Sources */,
+				87A6F06C215DCDA7009C2436 /* Someone'sBubbleViewCell.swift in Sources */,
+				8707A511212A3A4B0086EDB4 /* ChatGroupViewController.swift in Sources */,
+				8728EBDB21604CE100EB9A58 /* DBTestController.swift in Sources */,
+				8707A522212BC6500086EDB4 /* JoinViewController.swift in Sources */,
+				877CBCBF2128B04700AA7DA1 /* ChatViewController.swift in Sources */,
+				87A6F06D215DCDA7009C2436 /* LynnBubbleViewHeaderCell.swift in Sources */,
+				87E085C22120B1CF000FE3B2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E085CE2120B1D0000FE3B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E085D72120B1D0000FE3B2 /* TalkTalkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E085D92120B1D0000FE3B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E085E22120B1D0000FE3B2 /* TalkTalkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87E085D42120B1D0000FE3B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87E085BD2120B1CF000FE3B2 /* TalkTalk */;
+			targetProxy = 87E085D32120B1D0000FE3B2 /* PBXContainerItemProxy */;
+		};
+		87E085DF2120B1D0000FE3B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87E085BD2120B1CF000FE3B2 /* TalkTalk */;
+			targetProxy = 87E085DE2120B1D0000FE3B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87E085C52120B1CF000FE3B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87E085C62120B1CF000FE3B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87E085E42120B1D0000FE3B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87E085E52120B1D0000FE3B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87E085E72120B1D0000FE3B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8983A00D0F27E21DBDE32CB /* Pods-TalkTalk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HR534868ZS;
+				INFOPLIST_FILE = TalkTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ahnsolutions.effoice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87E085E82120B1D0000FE3B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1FD6DB8A5D186F3606A37BF /* Pods-TalkTalk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HR534868ZS;
+				INFOPLIST_FILE = TalkTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ahnsolutions.effoice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		87E085EA2120B1D0000FE3B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D08B841602B66AA61BAA5BC0 /* Pods-TalkTalkTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HR534868ZS;
+				INFOPLIST_FILE = TalkTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ahnsolutions.TalkTalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkTalk.app/TalkTalk";
+			};
+			name = Debug;
+		};
+		87E085EB2120B1D0000FE3B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C885915F2A17D58E042BD0E3 /* Pods-TalkTalkTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HR534868ZS;
+				INFOPLIST_FILE = TalkTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ahnsolutions.TalkTalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkTalk.app/TalkTalk";
+			};
+			name = Release;
+		};
+		87E085ED2120B1D0000FE3B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB7FB1335B37DAD54924E06E /* Pods-TalkTalkUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HR534868ZS;
+				INFOPLIST_FILE = TalkTalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ahnsolutions.TalkTalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TalkTalk;
+			};
+			name = Debug;
+		};
+		87E085EE2120B1D0000FE3B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B820BDA53DD5630A31E7C5E7 /* Pods-TalkTalkUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HR534868ZS;
+				INFOPLIST_FILE = TalkTalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ahnsolutions.TalkTalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TalkTalk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87E085B92120B1CF000FE3B2 /* Build configuration list for PBXProject "TalkTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E085E42120B1D0000FE3B2 /* Debug */,
+				87E085E52120B1D0000FE3B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87E085E62120B1D0000FE3B2 /* Build configuration list for PBXNativeTarget "TalkTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E085E72120B1D0000FE3B2 /* Debug */,
+				87E085E82120B1D0000FE3B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87E085E92120B1D0000FE3B2 /* Build configuration list for PBXNativeTarget "TalkTalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E085EA2120B1D0000FE3B2 /* Debug */,
+				87E085EB2120B1D0000FE3B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87E085EC2120B1D0000FE3B2 /* Build configuration list for PBXNativeTarget "TalkTalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E085ED2120B1D0000FE3B2 /* Debug */,
+				87E085EE2120B1D0000FE3B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87E085B62120B1CF000FE3B2 /* Project object */;
+}
